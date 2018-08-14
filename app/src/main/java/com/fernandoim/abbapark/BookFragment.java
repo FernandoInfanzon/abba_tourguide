@@ -27,10 +27,10 @@ public class BookFragment extends Fragment {
 
         // Create a list of words
         final ArrayList<Card> cards = new ArrayList<Card>();
-        cards.add(new Card(getString(R.string.title_activities_one),getString(R.string.activities_one), R.drawable.cover ));
-        cards.add(new Card(getString(R.string.title_activities_two),getString(R.string.activities_two), R.drawable.cover));
-        cards.add(new Card(getString(R.string.title_activities_three),getString(R.string.activities_three), R.drawable.cover));
-        cards.add(new Card(getString(R.string.title_activities_four),getString(R.string.activities_four), R.drawable.cover));
+        cards.add(new Card(getString(R.string.title_book_one),getString(R.string.book_one), R.drawable.standar ));
+        cards.add(new Card(getString(R.string.title_book_two),getString(R.string.book_two), R.drawable.family));
+        cards.add(new Card(getString(R.string.title_book_three),getString(R.string.book_three), R.drawable.master));
+        cards.add(new Card(getString(R.string.title_book_four),getString(R.string.book_four), R.drawable.masterplus));
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
         CardAdapter adapter = new CardAdapter(getActivity(), cards, R.color.category_book);

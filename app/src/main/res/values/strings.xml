@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AbbaPark</string>
 
-    <string name="learn_more">Learn more</string>
+    <string name="learn_more">more</string>
 
     <!-- Category name for phrases [CHAR LIMIT=20] -->
     <string name="category_book">Book</string>
@@ -29,7 +29,7 @@
     <string name="home_four">Description4</string>
 
     <!-- Miwok translation for number one -->
-    <string name="title_home_one">Title1</string>
+    <string name="title_home_one">WELCOME TO ABBA PARK</string>
 
     <!-- Miwok translation for number two -->
     <string name="title_home_two">Title2</string>
@@ -92,28 +92,32 @@
 
 
     <!-- Vocabulary word for the number one [CHAR LIMIT=20] -->
-    <string name="book_one">Description1</string>
+    <string name="book_one">
+Your cabin in the woods has large, sweeping ceilings, a wood fireplace, hot showers, and is lit with natural candlelight. Each brick was hand created, and that intentional foundation steeped in hundreds of years of tradition can be felt within the walls.</string>
 
     <!-- Vocabulary word for the number two [CHAR LIMIT=20] -->
-    <string name="book_two">Description2</string>
+    <string name="book_two">
+Your cabin in the woods has large, sweeping ceilings, a wood fireplace, hot showers, and is lit with natural candlelight. Each brick was hand created, and that intentional foundation steeped in hundreds of years of tradition can be felt within the walls.</string>
 
     <!-- Vocabulary word for the number three [CHAR LIMIT=20] -->
-    <string name="book_three">Description3</string>
+    <string name="book_three">
+Your cabin with two floors in the woods has large, sweeping ceilings, a wood fireplace, hot showers, and is lit with natural candlelight. Each brick was hand created, and that intentional foundation steeped in hundreds of years of tradition can be felt within the walls.</string>
 
     <!-- Vocabulary word for the number four [CHAR LIMIT=20] -->
-    <string name="book_four">Description4</string>
+    <string name="book_four">
+Your cabin in the woods has large, sweeping ceilings, a wood fireplace, two flors, two hot showers, and is lit with natural candlelight. Each brick was hand created, and that intentional foundation steeped in hundreds of years of tradition can be felt within the walls.</string>
 
     <!-- Miwok translation for number one -->
-    <string name="title_book_one">Title1</string>
+    <string name="title_book_one">Standard Room</string>
 
     <!-- Miwok translation for number two -->
-    <string name="title_book_two">Title2</string>
+    <string name="title_book_two">Family Room</string>
 
     <!-- Miwok translation for number three -->
-    <string name="title_book_three">Title3</string>
+    <string name="title_book_three">Master Room</string>
 
     <!-- Miwok translation for number four -->
-    <string name="title_book_four">Title4</string>
+    <string name="title_book_four">Master Room *</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
