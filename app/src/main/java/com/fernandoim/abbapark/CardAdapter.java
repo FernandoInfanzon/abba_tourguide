@@ -15,7 +15,7 @@ public class CardAdapter extends ArrayAdapter<Card> {
 
     private int mColorResourceId;
 
-    public CardAdapter(Activity context, ArrayList<Card> cards, int colorResourceId ){
+    public CardAdapter(Activity context, ArrayList<Card> cards, int colorResourceId) {
         super(context, 0, cards);
         mColorResourceId = colorResourceId;
     }
@@ -30,28 +30,26 @@ public class CardAdapter extends ArrayAdapter<Card> {
             );
         }
 
-        // Get the word object located at this position in the list
+        // Get the card object located at this position in the list
         Card currentCard = getItem(position);
 
         //Find the TextView in the list_item.xml layout the ID version_name
         TextView titleTextView = (TextView) listItemView.findViewById(R.id.title_text_view);
 
-        //Get the Version Name from the current AndroidFlavor object and set this text on the v
         titleTextView.setText(currentCard.getDescription());
 
         //Find the TextView in the list_item.xml with the ID version_number
         TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.description_text_view);
-        //Get the Version Number from the current AndroidFlavor object and set this on the
+
         descriptionTextView.setText(currentCard.getTitle());
 
         ImageView imageResourceId = (ImageView) listItemView.findViewById(R.id.imageResource);
 
-        if(currentCard.hasImage()){
+        if (currentCard.hasImage()) {
             imageResourceId.setImageResource(currentCard.getImageResourceId());
             imageResourceId.setVisibility(View.VISIBLE);
 
-        }
-        else {
+        } else {
             imageResourceId.setVisibility(View.GONE);
         }
 
@@ -68,8 +66,6 @@ public class CardAdapter extends ArrayAdapter<Card> {
         return listItemView;
 
     }
-
-
 
 
 }

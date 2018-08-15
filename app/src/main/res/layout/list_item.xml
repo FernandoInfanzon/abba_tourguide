@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="500dp"
+    android:layout_height="@dimen/list_height"
     android:background="@color/background"
     android:orientation="vertical">
 
@@ -13,30 +13,31 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:orientation="vertical"
         android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:orientation="vertical"
         android:padding="@dimen/icon_margin">
 
         <ImageView
             android:id="@+id/imageResource"
             android:layout_width="wrap_content"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/image_height"
             android:layout_marginTop="8dp"
             android:scaleType="centerCrop"
 
             />
+
         <TextView
             android:id="@+id/description_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-android:padding="8dp"
-            android:textStyle="bold"
             android:gravity="center"
+            android:padding="@dimen/padding_title"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
-            tools:text="This is a description" />
+            android:textStyle="bold"
+             />
 
 
         <TextView
@@ -44,28 +45,24 @@ android:padding="8dp"
             android:layout_width="match_parent"
             android:layout_height="@dimen/zero"
             android:layout_weight="1"
-            android:padding="0dp"
+            android:justificationMode="inter_word"
+            android:padding="@dimen/zero"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
-            tools:text="Abba Title" />
-
+             />
 
 
         <Button
             android:id="@+id/link_button"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:text="@string/learn_more"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/icon_margin"
             android:background="@drawable/button_background"
-            />
-
-
+            android:text="@string/learn_more" />
 
 
     </LinearLayout>
-
 
 
 </RelativeLayout>

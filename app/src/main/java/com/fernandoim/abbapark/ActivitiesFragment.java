@@ -1,9 +1,5 @@
 package com.fernandoim.abbapark;
 
-import android.content.Context;
-import android.content.res.Resources;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -25,13 +21,13 @@ public class ActivitiesFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.title_list, container, false);
 
-        // Create a list of words
+        // Create a list of Cards
         final ArrayList<Card> cards = new ArrayList<Card>();
-        cards.add(new Card(getString(R.string.title_activities_one),getString(R.string.activities_one), R.drawable.cover ));
-        cards.add(new Card(getString(R.string.title_activities_two),getString(R.string.activities_two), R.drawable.cover));
-        cards.add(new Card(getString(R.string.title_activities_three),getString(R.string.activities_three), R.drawable.cover));
-        cards.add(new Card(getString(R.string.title_activities_four),getString(R.string.activities_four), R.drawable.cover));
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        cards.add(new Card(getString(R.string.title_activities_one), getString(R.string.activities_one), R.drawable.dayonthefarm));
+        cards.add(new Card(getString(R.string.title_activities_two), getString(R.string.activities_two), R.drawable.mountainbiking));
+        cards.add(new Card(getString(R.string.title_activities_three), getString(R.string.activities_three), R.drawable.dayofsongdance));
+        cards.add(new Card(getString(R.string.title_activities_four), getString(R.string.activities_four), R.drawable.spaservicemassage));
+        // Create an {@link CardAdapter}, whose data source is a list of {@link Card}s. The
         // adapter knows how to create list items for each item in the list.
         CardAdapter adapter = new CardAdapter(getActivity(), cards, R.color.category_activities);
 
@@ -40,22 +36,12 @@ public class ActivitiesFragment extends Fragment {
         // word_list.xml layout file.
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link CardAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Card} in the list.
         listView.setAdapter(adapter);
 
-        // Set a click listener to play the audio when the list item is clicked on
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-
-                // Get the {@link Word} object at the given position the user clicked on
-                Card card = cards.get(position);
-
-                }
-        });
 
         return rootView;
     }
 
- }
+}

@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     tools:context="com.fernandoim.abbapark.MainActivity">
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="@dimen/image_height"
         android:src="@drawable/cover2"
         android:scaleType="centerCrop"/>
 
@@ -24,9 +25,11 @@
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tabs"
-
+        style="@style/CategoryTab"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/category_home"
+        />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

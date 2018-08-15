@@ -6,15 +6,15 @@
 
     <color name="background">#B9F6CA</color>
 
-    <!-- Background color for the numbers category -->
+    <!-- Background color for the home category -->
     <color name="category_home">#FD8E09</color>
 
-    <!-- Background color for the family members category -->
+    <!-- Background color for the activities category -->
     <color name="category_activities">#379237</color>
 
-    <!-- Background color for the colors category -->
-    <color name="category_thePark">#8800A0</color>
+    <!-- Background color for the park category -->
+    <color name="category_thePark">#fb8c00</color>
 
-    <!-- Background color for the phrases category -->
+    <!-- Background color for the book category -->
     <color name="category_book">#33691e</color>
 </resources>

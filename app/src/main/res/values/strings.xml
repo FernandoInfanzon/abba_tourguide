@@ -3,124 +3,82 @@
 
     <string name="learn_more">more</string>
 
-    <!-- Category name for phrases [CHAR LIMIT=20] -->
     <string name="category_book">Book</string>
 
-    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
     <string name="category_thePark">The Park</string>
 
-    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
     <string name="category_home">Home</string>
 
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_Activities">Activities</string>
 
+    <string name="home_one">Welcome to Mexico, and welcome to Abba Park. The nature reserve occupies 24 acres of the lush, stunning land of the Sierra del Tigre Mountains. You\'ll be surrounded by mountains, greenery, trees, rivers, and wildlife.  </string>
 
-    <!-- Vocabulary word for the number one [CHAR LIMIT=20] -->
-    <string name="home_one">Description1</string>
+    <string name="home_two">6 Constitucion Street, Centro,  Concepcion de Buenos Aires, Mexico, ZP 49170 </string>
 
-    <!-- Vocabulary word for the number two [CHAR LIMIT=20] -->
-    <string name="home_two">Description2</string>
+    <string name="home_three">Our fully functioning farm is tended to by traditional practices passed down for generations. Drink fresh milk, pick your eggs for breakfast, and allow the kids and yourselves to play alongside the cows, goats, chickens, and horses that spend their lives at Abba Park. </string>
 
-    <!-- Vocabulary word for the number three [CHAR LIMIT=20] -->
-    <string name="home_three">Description3</string>
+    <string name="home_four">Your cabin in the woods has large, sweeping ceilings, a wood fireplace, hot showers, and is lit with natural candlelight. Each brick was hand created, and that intentional foundation steeped in hundreds of years of tradition can be felt within the walls. There are 24 acres of land to explore.</string>
 
-    <!-- Vocabulary word for the number four [CHAR LIMIT=20] -->
-    <string name="home_four">Description4</string>
-
-    <!-- Miwok translation for number one -->
     <string name="title_home_one">WELCOME TO ABBA PARK</string>
 
-    <!-- Miwok translation for number two -->
-    <string name="title_home_two">Title2</string>
+    <string name="title_home_two">VISIT US</string>
 
-    <!-- Miwok translation for number three -->
-    <string name="title_home_three">Title3</string>
+    <string name="title_home_three">THE FARM</string>
 
-    <!-- Miwok translation for number four -->
-    <string name="title_home_four">Title4</string>
+    <string name="title_home_four">THE ADOBE</string>
 
+    <string name="activities_one">We\'ll explore Mexican farming and cooking techniques that have been passed down for generations.
+On the farm made Pajarete / Breakfast / Cheese Factory / Tortilla factory / Adobe Factory / 4 hr $25.00  </string>
 
-    <!-- Vocabulary word for the number one [CHAR LIMIT=20] -->
-    <string name="activities_one">Description1</string>
+    <string name="activities_two">Mountain Biking Circuit / Guide shows you around \n 2 hrs $10</string>
 
-    <!-- Vocabulary word for the number two [CHAR LIMIT=20] -->
-    <string name="activities_two">Description2</string>
+    <string name="activities_three">Dinner / Mariachi / Folkloric Dance / Cazuela (tequila drink. Vampiro). \n Minimum of 8 people. \n 3 HRS $100 USD</string>
 
-    <!-- Vocabulary word for the number three [CHAR LIMIT=20] -->
-    <string name="activities_three">Description3</string>
+    <string name="activities_four">A massage by our in-house masseur. Book Online. \n Spa Service - Massage 1 hr $45</string>
 
-    <!-- Vocabulary word for the number four [CHAR LIMIT=20] -->
-    <string name="activities_four">Description4</string>
+    <string name="title_activities_one">A DAY ON THE FARM</string>
 
-    <!-- Miwok translation for number one -->
-    <string name="title_activities_one">Title1</string>
+    <string name="title_activities_two">MOUNTAIN BIKING</string>
 
-    <!-- Miwok translation for number two -->
-    <string name="title_activities_two">Title2</string>
+    <string name="title_activities_three">A DAY OF SONG AND DANCE</string>
 
-    <!-- Miwok translation for number three -->
-    <string name="title_activities_three">Title3</string>
+    <string name="title_activities_four">SPA</string>
 
-    <!-- Miwok translation for number four -->
-    <string name="title_activities_four">Title4</string>
+    <string name="thePark_one">Try our authentic flag ( Tequila + Lemon + Sangrita ) Black Charro ! Original Vampire ! Learn how to prepare you own cazuela !</string>
 
+    <string name="thePark_two">The chef Maurice Salgado challenges the most demanding palates around the world with his author fusion cuisine</string>
 
-    <!-- Vocabulary word for the number one [CHAR LIMIT=20] -->
-    <string name="thePark_one">Description1</string>
+    <string name="thePark_three">Duration varies • 20 dls and up Our Ziplines circuit are just awesome ! </string>
 
-    <!-- Vocabulary word for the number two [CHAR LIMIT=20] -->
-    <string name="thePark_two">Description2</string>
+    <string name="thePark_four">Fire place, full private bathroom one or two bed, bbq area, camping equipment available just in the heart of the amazing forest ! </string>
 
-    <!-- Vocabulary word for the number three [CHAR LIMIT=20] -->
-    <string name="thePark_three">Description3</string>
+    <string name="title_thePark_one">Sky Bar</string>
 
-    <!-- Vocabulary word for the number four [CHAR LIMIT=20] -->
-    <string name="thePark_four">Description4</string>
+    <string name="title_thePark_two">Restaurant</string>
 
-    <!-- Miwok translation for number one -->
-    <string name="title_thePark_one">Title1</string>
+    <string name="title_thePark_three">Zip lines</string>
 
-    <!-- Miwok translation for number two -->
-    <string name="title_thePark_two">Title2</string>
+    <string name="title_thePark_four">Cottages</string>
 
-    <!-- Miwok translation for number three -->
-    <string name="title_thePark_three">Title3</string>
-
-    <!-- Miwok translation for number four -->
-    <string name="title_thePark_four">Title4</string>
-
-
-    <!-- Vocabulary word for the number one [CHAR LIMIT=20] -->
     <string name="book_one">
 Your cabin in the woods has large, sweeping ceilings, a wood fireplace, hot showers, and is lit with natural candlelight. Each brick was hand created, and that intentional foundation steeped in hundreds of years of tradition can be felt within the walls.</string>
 
-    <!-- Vocabulary word for the number two [CHAR LIMIT=20] -->
     <string name="book_two">
 Your cabin in the woods has large, sweeping ceilings, a wood fireplace, hot showers, and is lit with natural candlelight. Each brick was hand created, and that intentional foundation steeped in hundreds of years of tradition can be felt within the walls.</string>
 
-    <!-- Vocabulary word for the number three [CHAR LIMIT=20] -->
     <string name="book_three">
 Your cabin with two floors in the woods has large, sweeping ceilings, a wood fireplace, hot showers, and is lit with natural candlelight. Each brick was hand created, and that intentional foundation steeped in hundreds of years of tradition can be felt within the walls.</string>
 
-    <!-- Vocabulary word for the number four [CHAR LIMIT=20] -->
     <string name="book_four">
 Your cabin in the woods has large, sweeping ceilings, a wood fireplace, two flors, two hot showers, and is lit with natural candlelight. Each brick was hand created, and that intentional foundation steeped in hundreds of years of tradition can be felt within the walls.</string>
 
-    <!-- Miwok translation for number one -->
     <string name="title_book_one">Standard Room</string>
 
-    <!-- Miwok translation for number two -->
     <string name="title_book_two">Family Room</string>
 
-    <!-- Miwok translation for number three -->
     <string name="title_book_three">Master Room</string>
 
-    <!-- Miwok translation for number four -->
     <string name="title_book_four">Master Room *</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

@@ -2,15 +2,12 @@ package com.fernandoim.abbapark;
 
 public class Card {
 
-    //Default translation for the word */
-    private String mTitle;
-
-    //Miwok translation for the word */
-    private String mDescription;
-
-    private int mImageResourceId = NO_IMAGE_PROVIDED;
-
     private static final int NO_IMAGE_PROVIDED = -1;
+    //title for the card */
+    private String mTitle;
+    //Description for the card */
+    private String mDescription;
+    private int mImageResourceId = NO_IMAGE_PROVIDED;
 
 
     public Card(String title, String description, int imageResourceId) {
@@ -20,22 +17,24 @@ public class Card {
     }
 
     //
-    //* Get the default translation of the word.
+    //* Get the title of the card.
 
     public String getTitle() {
         return mTitle;
     }
 
 
-    //* Get the Miwok translation of the word.
+    //* Get the description of the word.
 
     public String getDescription() {
         return mDescription;
     }
 
-    public int getImageResourceId() { return mImageResourceId;}
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
 
-    public boolean hasImage(){
+    public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
