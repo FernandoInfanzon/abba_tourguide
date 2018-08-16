@@ -11,6 +11,11 @@
 
     <string name="category_Activities">Activities</string>
 
+    <string name="title">Title of card</string>
+    <string name="description">Description of card</string>
+    <string name="image">Imagen of card</string>
+
+
     <string name="home_one">Welcome to Mexico, and welcome to Abba Park. The nature reserve occupies 24 acres of the lush, stunning land of the Sierra del Tigre Mountains. You\'ll be surrounded by mountains, greenery, trees, rivers, and wildlife.  </string>
 
     <string name="home_two">6 Constitucion Street, Centro,  Concepcion de Buenos Aires, Mexico, ZP 49170 </string>

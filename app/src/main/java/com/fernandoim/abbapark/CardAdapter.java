@@ -1,7 +1,10 @@
 package com.fernandoim.abbapark;
 
 import android.app.Activity;
+
 import android.support.v4.content.ContextCompat;
+
+import android.support.v7.widget.RecyclerView.ViewHolder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,39 +25,41 @@ public class CardAdapter extends ArrayAdapter<Card> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder holder;
+
         // Check if an existing view is being reused, otherwise inflate the view
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
+
+        if (null == convertView) {
+            convertView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false
             );
+            holder = new ViewHolder();
+            holder.titleTextView = (TextView) convertView.findViewById(R.id.title_text_view);
+            holder.descriptionTextView = (TextView) convertView.findViewById(R.id.description_text_view);
+            holder.imageResourceId = (ImageView) convertView.findViewById(R.id.imageResource);
+            convertView.setTag(holder);
+        } else  {
+            holder = (ViewHolder) convertView.getTag();
         }
 
         // Get the card object located at this position in the list
         Card currentCard = getItem(position);
 
-        //Find the TextView in the list_item.xml layout the ID version_name
-        TextView titleTextView = (TextView) listItemView.findViewById(R.id.title_text_view);
 
-        titleTextView.setText(currentCard.getDescription());
-
-        //Find the TextView in the list_item.xml with the ID version_number
-        TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.description_text_view);
-
-        descriptionTextView.setText(currentCard.getTitle());
-
-        ImageView imageResourceId = (ImageView) listItemView.findViewById(R.id.imageResource);
+        holder.titleTextView.setText(currentCard.getTitle());
+        holder.descriptionTextView.setText(currentCard.getDescription());
+        holder.imageResourceId.setImageResource(currentCard.getImageResourceId());
 
         if (currentCard.hasImage()) {
-            imageResourceId.setImageResource(currentCard.getImageResourceId());
-            imageResourceId.setVisibility(View.VISIBLE);
+            holder.imageResourceId.setImageResource(currentCard.getImageResourceId());
+            holder.imageResourceId.setVisibility(View.VISIBLE);
 
         } else {
-            imageResourceId.setVisibility(View.GONE);
+            holder.imageResourceId.setVisibility(View.GONE);
         }
 
         //Set the theme color for the list item
-        View textContainer = listItemView.findViewById(R.id.text_container);
+        View textContainer = convertView.findViewById(R.id.text_container);
 
         //Find the color that the resoruce ID maps to
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
@@ -63,8 +68,13 @@ public class CardAdapter extends ArrayAdapter<Card> {
         textContainer.setBackgroundColor(color);
 
         //Return the whole list item layout (containing 2 TextViews) so that
-        return listItemView;
+        return convertView;
 
+    }
+
+    private static class ViewHolder {
+        private TextView titleTextView, descriptionTextView;
+        private ImageView imageResourceId;
     }
 
 
